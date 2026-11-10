@@ -31,6 +31,7 @@
             this.Lbl_Par = new System.Windows.Forms.Label();
             this.Lbl_DigiteNumero = new System.Windows.Forms.Label();
             this.textbox = new System.Windows.Forms.TextBox();
+            this.Btn_Voltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_Par
@@ -52,7 +53,7 @@
             this.Lbl_DigiteNumero.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_DigiteNumero.Location = new System.Drawing.Point(345, 236);
             this.Lbl_DigiteNumero.Name = "Lbl_DigiteNumero";
-            this.Lbl_DigiteNumero.Size = new System.Drawing.Size(228, 32);
+            this.Lbl_DigiteNumero.Size = new System.Drawing.Size(229, 32);
             this.Lbl_DigiteNumero.TabIndex = 1;
             this.Lbl_DigiteNumero.Text = "Digite um Número";
             // 
@@ -64,6 +65,22 @@
             this.textbox.Size = new System.Drawing.Size(156, 27);
             this.textbox.TabIndex = 2;
             // 
+            // Btn_Voltar
+            // 
+            this.Btn_Voltar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.Btn_Voltar.FlatAppearance.BorderSize = 3;
+            this.Btn_Voltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Btn_Voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Btn_Voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Voltar.Location = new System.Drawing.Point(777, 426);
+            this.Btn_Voltar.Name = "Btn_Voltar";
+            this.Btn_Voltar.Size = new System.Drawing.Size(129, 64);
+            this.Btn_Voltar.TabIndex = 3;
+            this.Btn_Voltar.Text = "Voltar";
+            this.Btn_Voltar.UseVisualStyleBackColor = true;
+            this.Btn_Voltar.Click += new System.EventHandler(this.Btn_Voltar_Click);
+            // 
             // Frm_ParOuImpar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -71,6 +88,7 @@
             this.BackgroundImage = global::ProjetoMatematica.Properties.Resources.ParOuImpar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(918, 502);
+            this.Controls.Add(this.Btn_Voltar);
             this.Controls.Add(this.textbox);
             this.Controls.Add(this.Lbl_DigiteNumero);
             this.Controls.Add(this.Lbl_Par);
@@ -86,5 +104,6 @@
         private System.Windows.Forms.Label Lbl_Par;
         private System.Windows.Forms.Label Lbl_DigiteNumero;
         private System.Windows.Forms.TextBox textbox;
+        private System.Windows.Forms.Button Btn_Voltar;
     }
 }
