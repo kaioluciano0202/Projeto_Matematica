@@ -23,5 +23,10 @@ namespace ProjetoMatematica
             Abertura.Show();
             Hide();
         }
+
+        private void Frm_Antecessor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
